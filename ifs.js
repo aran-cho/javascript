@@ -16,5 +16,15 @@ if (!condition) {
 } //거짓이면 출력
 //   컨디션 상태에 따라 어떤건 찍고 어떤건 안 찍을수 있음
 
+let score = 50;
+if (score >= 90){
+    console.log("well !");
+} else if (score >= 50 ) {
+    console.log("good !");
+} else {
+    console.log("not bad !")
+}
+
+// === 
 console.clear()
 
