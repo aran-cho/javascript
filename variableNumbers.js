@@ -10,3 +10,4 @@ console.log(numberFirst + numberSecond);
 
 let numberResult = numberFirst + numberSecond;
 console.log(numberResult);
+
