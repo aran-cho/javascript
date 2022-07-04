@@ -25,3 +25,8 @@ rl.on('line', function(line) {
 
     process.exit();
 });
+
+// 입력
+// let input = "2 50".split(' ');
+// let hour = Number(input[0]);
+// let minute = Number(input[1]);
