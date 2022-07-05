@@ -33,16 +33,17 @@
 //한번 더 확인
 let mixins = ["apple", false, "banana", 4 , "orange", ["tiger", "lion"]];
 for (let mixin of mixins){
-    console.log("mixins:" +mixin);
+    console.log("mixins:" + mixin);
     
-    // console.log(!(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'))
+    // console.log(!(typeof (mixin) =='Number') || (typeof (mixin) =='Boolean') || (typeof (mixin) =='String'))
     // );
 
-    let condision = !(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'));
+    let condision = !((typeof(mixin) =='number') || (typeof(mixin) =='boolean') || (typeof(mixin) =='string'));
     if (condision){
-        for(let animal of mixin){
+        for(let animal of mixin)
+        {
             console.log("animals :" +animal);
-            }
+        }
     }
 }
 
@@ -50,18 +51,18 @@ for (let mixin of mixins){
 let foreach = function(mixin, index){
     console.log("mixins:" + mixin);
     
-    // console.log(!(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'))
+    // console.log(!(typeof (mixin) =='Number') || (typeof (mixin) =='Boolean') || (typeof (mixin) =='String'))
     // );
 
-    let condision = !(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'));
+    let condision = !((typeof(mixin) =='number') || (typeof(mixin) =='boolean') || (typeof(mixin) =='string'));
     if (condision){
-        for(let animal of mixin){
-            console.log("animals :" + animal);
-            }
+        for(let animal of mixin)
+        {
+            console.log("animals :" +animal);
+        }
     }
 }
-
-//let ~ of ~ 의 단점 : 인덱스(순서)를 모름-> foreaxh사용
+//let ~ of ~ 의 단점 : 인덱스(순서)를 모름-> foreach사용
 mixins.forEach(foreach);
 console.log("programa end ! ");
 
@@ -70,14 +71,15 @@ console.log("programa end ! ");
 mixins.forEach (function(mixin, index){
     console.log("mixins:" + mixin);
     
-    // console.log(!(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'))
+    // console.log(!(typeof (mixin) =='Number') || (typeof (mixin) =='Boolean') || (typeof (mixin) =='String'))
     // );
 
-    let condision = !(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'));
+    let condision = !((typeof(mixin) =='number') || (typeof(mixin) =='boolean') || (typeof(mixin) =='string'));
     if (condision){
-        for(let animal of mixin){
-            console.log("animals :" + animal);
-            }
+        for(let animal of mixin)
+        {
+            console.log("animals :" +animal);
+        }
     }
 })
 
@@ -85,17 +87,17 @@ mixins.forEach (function(mixin, index){
 mixins.forEach ( (mixin, index) =>{
     console.log("mixins:" + mixin);
     
-    // console.log(!(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'))
+    // console.log(!(typeof (mixin) =='Number') || (typeof (mixin) =='Boolean') || (typeof (mixin) =='String'))
     // );
 
-    let condision = !(((typeof mixin) =='Number') || ((typeof mixin) =='Boolean') || ((typeof mixin) =='String'));
+    let condision = !((typeof(mixin) =='number') || (typeof(mixin) =='boolean') || (typeof(mixin) =='string'));
     if (condision){
-        for(let animal of mixin){
-            console.log("animals :" + animal);
-            }
+        for(let animal of mixin)
+        {
+            console.log("animals :" +animal);
+        }
     }
 })
-
 console.log("programa end ! ");
 
 
