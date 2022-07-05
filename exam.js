@@ -28,6 +28,30 @@
 // }
 // A , '\*'를 안쓰고 '2 *'했는데 백준에서 실패했음 왜?
 
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+// });
+  
+// rl.on('line', function(line) { 
+
+//     const words = line.split(' '); 
+//     const A = parseInt(words[0]); 
+//     const B = parseInt(words[1]);
+
+//     for(let N = 1; N < 10; N = N+1){
+//     let B = A * N
+//     console.log(A, '\*', N, "=", B);
+
+
+//     console.log(A+B);
+//     rl.close(); 
+// }).on("close", function() {
+//     process.exit();
+// });
+
+
 //2번 A+B -3
 // const fs = require('fs');
 // const input = fs.readFileSync('./A.txt').toString().split('\n') ;
@@ -93,12 +117,24 @@
 // }
 
 
-//10번
-const fs = require('fs');
-const input = fs.readFileSync('./A.txt').toString() ;
-let A= Number(input);
+// 10번
+// const fs = require('fs');
+// const input = fs.readFileSync('./A.txt').toString() ;
+// let A= Number(input);
 
-for(let B = 1; B <= input; B++){
-    console.log(' '.repeat(input-B) + '*'.repeat(B));
-}
+// for(let B = 1; B <= input; B++){
+//     console.log(' '.repeat(input-B) + '*'.repeat(B));
+// }
+
+// const fs = require('fs');
+// const input = fs.readFileSync('./A.txt').toString() ;
+// let A= Number(input);
+
+// let B = "";
+// for(let i = 1; i <= input; i++){
+//     console.log();
+//     for(let j = 1; j <= input; j++){
+
+//     }
+// }
 
