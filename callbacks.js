@@ -45,6 +45,8 @@ let sumFour = function(item_1,item_2,item_3=0, callback){
     result = item_1 + item_2 + item_3;
     return result;
 }
+//function 파라미터에 function을 넣는이유 : 어떤 기능이든 callback이 해줌
+//->한단어로 표현한다면 : 유연성(내단어), 갈림길(강사님단어)
 
 console.log(sumFour(first, second, third, multiplyTwo));
 console.log(sumFour(first, second, third, sumTwo));
