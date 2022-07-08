@@ -4,7 +4,10 @@
 // liTag.appendChild(liText);
 // ulTag.appendChild(liTag);
 // //콘솔을 활용
-
+let atag = document.querySelector('a');
+atag.innerText = "Daum";
+atag.setAttribute('class', 'daum');
+atag.setAttribute("href","https://www.daum.net");
 
 let remove = function (first){
     console.log(`remove: ${first}`)
@@ -44,6 +47,9 @@ function add(first='0'){
 //     return true;
 // }
 
+
+
+
 let addEvent = document.querySelector("#add");
 // addEvent.addEventListener('click', add);
 // addEvent.addEventListener('click', (first='0' )=>{
@@ -60,7 +66,6 @@ let addEvent = document.querySelector("#add");
 
 
 
-
 addEvent.addEventListener('click', (event)=>{
     // console.log(event);
     console.log(event.target.innerText);
@@ -70,7 +75,7 @@ addEvent.addEventListener('click', (event)=>{
     let liText = document.createTextNode('Sony')
     liTag.appendChild(liText);
     ulTag.appendChild(liTag);
-//버튼 클릭했을때 소니가 바로 빝에 붙음
+//버튼 클릭했을때 소니가 바로 밑에 붙음
     return true;
 });
 
@@ -87,9 +92,6 @@ addEvent.addEventListener('click', (event)=>{
 //     return true;
 
 // }
-
-
-
 
 
 
